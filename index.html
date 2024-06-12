@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="a" class="aa">
+                </div>
+                <div>
+                    <input type="button" value="AC" class=" op" onclick="mpt()">
+                    <!-- <input type="button" value=""onclick="display.value += '' " class="op"> -->
+                    <input type="button" value="DE" onclick="mpt()"  class="op">
+                    <input type="button" value="."   class="op" onclick="cal('.')">
+                    <input type="button" value="/"   class="op" onclick="cal('/')">
+                </div>
+                <div>
+                    <input type="button" value="7"onclick="cal(7)" >
+                    <input type="button" value="8"onclick="cal(8)" >
+                    <input type="button" value="9" onclick="cal(9)">
+                    <input type="button" value="*"   class="op" onclick="cal('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="cal(4)">
+                    <input type="button" value="5" onclick="cal(5)">
+                    <input type="button" value="6" onclick="cal(6)">
+                    <input type="button" value="-"  class="op" onclick="cal('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="cal(1)">
+                    <input type="button" value="2" onclick="cal(2)">
+                    <input type="button" value="3" onclick="cal(3)">
+                    <input type="button" value="+"  class="op" onclick="cal('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="cal('00')">
+                    <input type="button" value="0" onclick="cal(0)">
+                    <input type="button" value="=" class="equal op" onclick="solution()">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
