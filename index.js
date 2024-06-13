@@ -11,3 +11,6 @@ function solution() {
     let b = eval(a);
     document.getElementById('a').value = b;
 }
+function del() {
+    a.value = a.value.slice(0, -1);
+}
